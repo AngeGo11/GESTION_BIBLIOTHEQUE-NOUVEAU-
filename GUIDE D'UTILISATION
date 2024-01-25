@@ -1,0 +1,61 @@
+GUIDE D’UTILISATION DU PROJET DE
+GESTION D’UNE BIBLIOTHEQUE
+
+Ecrit par : GOMEZ Ange Axel
+Professeur : M. N’GOLO Konaté
+
+Ce système de gestion de Bibliothèque a été conçu pour vous aider, chers Gérant de Bibliothèque, à gérer efficacement les opérations courantes d’une Bibliothèque. Ce guide vous expliquera comment utiliser les fonctionnalités du système pour effectuer plusieurs tâches de manière systématique à savoir : 
+1.	Afficher la liste des livres disponible ;
+2.	Ajouter de nouveaux Livres ;
+3.	Supprimer des livres ;
+4.	Mettre à jour les stocks ;
+5.	Rechercher un livre ;
+6.	Emprunter des livres ;
+7.	Afficher la liste des emprunteurs ;
+8.	Retourner un livre emprunté.
+
+
+Dans ce guide d’utilisation, vous trouvez donc toutes les informations nécessaires et les prérequis pour vous familiariser avec cette application. 
+
+
+COMMENT UTILISER CETTE APPLICATION ?
+Il faut d’abord lancer l’application. Après avoir lancé l’application, un menu appelé « Menu Bibliothèque » s’ouvrira avec la liste des différentes fonctionnalités de cette application. Et une action sera effectuée en fonction du choix de l’utilisateur. 
+
+1.	Afficher la liste des livres disponibles :
+Après avoir lancé l’application, dans le menu Bibliothèque, sélectionner l’option « afficher la liste des livres disponibles » en tapant sur 1. 
+Cette fonctionnalité permettra d’afficher les livres actuellement disponibles dans la liste avec leurs différentes caractéristiques : Le nom de l’auteur, Le nom du livre, L’édition, La date de parution et la quantité en stock du livre. La liste des livres sera affichée à l’écran. 
+
+2.	Emprunter un livre :
+Après avoir lancé l’application, dans le menu Bibliothèque, sélectionner l’option « Emprunter un livre » en tapant sur 2.
+Bien entendu, il faut que le livre soit nécessairement présent dans la liste des livres disponibles. Après avoir taper l’option 2 pour emprunter un livre, l’utilisateur va entrer le nom du livre qu’il souhaite emprunter et suivre les instructions à l’écran pour enregistrer les détails et l’emprunt et finaliser l’opération. Après l’emprunt, le livre emprunté sera enregistré dans une liste appelée Liste_Emprunt.
+
+3.	Retourner un livre :
+Après avoir lancé l’application, dans le menu Bibliothèque, sélectionner l’option « Retourner un livre » en tapant sur 3.
+Bien entendu, il faut que le livre soit nécessairement présent dans la liste des emprunts car, on ne peut pas retourner un livre que l’on a pas emprunté. Après avoir taper l’option 3 pour retourner un livre, l’utilisateur va entrer le nom du livre qu’il souhaite retourner et suivre les instructions à l’écran pour enregistrer les details du retour de livre.
+
+4.	Ajouter un livre :
+Après avoir lancé l’application, dans le menu Bibliothèque, sélectionner l’option « Ajouter un livre » en tapant sur 4.
+L’utilisateur devra saisir les différents détails du nouveau livre à savoir : Entrer le nom de l’auteur, le titre du livre, l’Edition, la date de parution du livre et la quantité entrée.
+Après avoir suivie toutes ces instructions, le livre sera ajouté à la liste des livres.
+
+5.	Supprimer un livre :
+Après avoir lancé l’application, dans le menu Bibliothèque, sélectionner l’option « Supprimer un livre » en tapant sur 5.
+L’utilisateur devra donc saisir le nom du livre qu’il veut supprimer de la liste. Le livre à supprimer devra bien évidemment faire déjà partir de la liste des livres disponibles.
+
+6.	Rechercher un livre :
+Après avoir lancé l’application, dans le menu Bibliothèque, sélectionner l’option « Rechercher un livre » en tapant sur 6.
+Ici, il s’agira pour l’utilisateur de rentrer le nom du livre qu’il souhaite rechercher. Le livre rechercher ainsi que ses détails s’afficheront donc à l’écran. Le livre à rechercher devra donc bien évidemment faire déjà partir de la liste des livres disponibles dans la bibliothèque.
+ 
+
+7.	Mettre à jour les stocks :
+Après avoir lancé l’application, dans le menu Bibliothèque, sélectionner l’option « Mettre à jour les stocks » en tapant sur 7.
+Ici, il s’agira pour l’utilisateur de rentrer le nom du livre dont il souhaite mettre à jour les stocks puis, saisir la nouvelle quantité du livre. Le livre devra bien évidemment faire déjà partir de la liste des livres disponibles.
+
+8.	Afficher la liste des emprunteurs :
+Après avoir lancé l’application, dans le menu Bibliothèque, sélectionner l’option « afficher la liste des emprunteurs » en tapant sur 8.
+Cette option affichera le nom de l’emprunteur, le nom du livre emprunté, la date d’emprunt et la date de fin emprunt (C’est-à-dire la date de retour du livre). La liste des emprunteurs sera donc affichée à l’écran.
+
+
+ 
+
+
