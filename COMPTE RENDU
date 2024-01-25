@@ -1,0 +1,76 @@
+# GESTION_BIBLIOTHEQUE-NOUVEAU-
+
+
+COMPTE RENDU DU PROJET JAVA : 
+GESTION D’UNE BIBLIOTHEQUE
+
+Ecrit par : GOMEZ Ange Axel
+Professeur : M. N’GOLO Konaté
+
+Ce projet est une Application Java de gestion de bibliothèque qui permet de réaliser des opérations courante d’une bibliothèque. C’est une application dynamique qui permettra : 
+1.	D’Afficher la liste des livres disponible ;
+2.	L’Ajout dynamique de nouveaux Livres ;
+3.	La suppression d’un livre ;
+4.	La mise à jour des stocks ;
+5.	La recherche d’un livre ;
+6.	L’Emprunt de livres disponible ;
+7.	L’affichage de la liste des emprunteurs ;
+8.	Le retour d’un livre emprunté.
+Le tout en une seule exécution du programme.
+Description du projet.
+I.	L’Interface LIBRAIRIES : 
+Cette interface contient les méthodes abstraites : 
+- Méthode AjouterLivre () : Pour l’ajout dynamique des livres.
+- Méthode SupprimerLivre () : Pour la suppression dynamique des livres.
+- Méthode afficherLivreDisponible () : Pour l’affichage des livres disponibles dans la bibliothèque
+- Méthode RechercherLivre () : Pour la recherche des livres disponible dans la bibliothèque.
+
+II.	Class Livre : 
+Création de ArrayListe<Livre> Liste_Livre () : C’est une liste qui contiendra la liste de tous les livres disponibles dans la bibliothèque.
+public ArrayListe<Livre> Liste_Livre () : Cette méthode initialise une liste de livres avec quelques exemples de livres et la retourne. Elle est utilisée pour afficher la Méthode des livres disponibles
+Cette class contient aussi des getters et des setters pour chaque attribut : Nom de l’auteur, Nom du livre, édition, année de parution, quantité de livres.
+
+III.	Class Bibliothèque :
+Cette classe qui hérite de la classe Livre et implémente l’interface LIBRAIRIES ;
+Avant toute opération, nous avons avant tout crée une liste appelée Liste_Livres, dans la classe Livre. Cette liste contiendra tous les livres disponibles dans notre Bibliothèque. Et Afin d’utilisée l’ArrayList de cette classe, je l’ai instancié.
+
+	Méthode afficherLivreDisponible () :
+La création de cette Méthode va nous permettre l’affichage des livres disponible. Nous avons utilisé une boucle for qui va parcourir la liste des livres. Et à l’aide de System.out.println(), Cette boucle va rechercher tous les livres et les afficher avec leur détails (Nom Auteur, Nom du livre, Nom de L’Edition, La date de Parution, ainsi que la quantité disponible).
+
+	Méthode AjouterLivre () : 
+La création de cette Méthode va nous permettre l’ajout dynamique de nouveaux livres. Nous avons utilisé une boucle while qui va nous permettre d’exécuter les différentes instructions (les caractéristiques du nouveau livre ((Nom de l’auteur, Nom du livre, Nom de l’édition, l’année de parution, ainsi que le nombre d’exemplaire)) et de l’ajouter à la liste des livres. 
+A la fin de chaque ajout de livre, le programme demandera si l’utilisateur souhaite continuer et si l’utilisateur saisie le mot fin, Le programme lui demandera s’il souhaite retourner au Menu Bibliothèque. L’utilisateur saisira « O » s’il le veut ou « fin » sinon.
+
+	Méthode SupprimerLivre () :
+La création de cette Méthode va nous permettre la suppression dynamique des livres disponible. Nous avons utilisé une boucle for qui va parcourir la liste des livres. Si le nom du livre saisit par l’utilisateur correspond au nom d’un livre de la liste, alors le programme va supprimer ce livre-là de la liste. Il affichera ainsi que la suppression a été effectué avec succès sinon (Condition selon laquelle le livre ne correspond pas) cela voudrait dire qu’il y a pas de ce livre dans la liste. Le programme affichera donc « Ce livre n’existe pas dans La Bibliothèque ».
+
+	Méthode RechercherLivre () :
+La création de cette méthode va nous permettre la des livres disponibles. L’utilisateur entrera d’abord le nom du livre. La  boucle for qui va parcourir la liste des livres. Si le nom du livre recherché saisit par l’utilisateur correspond au nom d’un livre de la liste alors le programme affichera le livre correspondant avec ses détails ainsi que la suppression a été effectué avec succès sinon (Condition selon laquelle le livre ne correspond pas) cela voudrait dire qu’il y a pas de ce livre dans la liste. Le programme affichera donc « Aucun résultat ».
+
+	Méthode MettreAJourLesStocks () :
+La création de cette méthode va nous permettre la mise à jour des stocks, c’est-à-dire la modification dynamique des quantités des livres disponibles. Nous avons utilisé une boucle for qui va parcourir la liste des livres. Si le nom du livre saisit par l’utilisateur correspond au nom d’un livre de la liste, alors le programme va demander à l’utilisateur d’entrer la quantité souhaitée du livre. Il modifiera donc la quantité du livre qui était auparavant-là par la nouvelle quantité que nous venons d’entrer. Sinon (Condition selon laquelle le livre ne correspond pas) cela voudrait dire qu’il y a pas de ce livre dans la liste. Le programme affichera donc « Désolé, ce livre n’a pas été trouvé ».
+
+IV.	Class Emprunteur : 
+Avant toute opération, nous avons avant tout crée une liste appelée Liste_Emprunt. Cette liste contiendra tous les Emprunteurs qui ont été enregistré suite à l’emprunt d’un livre de la Liste_Livres. Elle a un constructeur qui initialise Les attributs (Nom de l’Emprunteur, Le Livre Emprunté, Quantité Empruntée, Date de début de l’emprunt, Date d’échéance (Date à laquelle le livre doit être rendu).
+	Méthode Emprunter () : 
+Cette méthode permet à un emprunteur d’emprunter un des livres disponibles dans la Liste des livres. Elle gère les opérations d’emprunts, y compris que la vérification de la disponibilité du livre ainsi que la mise à jour de la quantité du livre au cas où il y a emprunt de livre.
+L’emprunteur saisira donc son nom ainsi que le nom du livre qu’il souhaite emprunter. On utilisera alors une boucle for pour parcourir la liste des livres. Si le livre saisit existe dans La liste des livres, La console lui demandera la quantité qu’il souhaite empruntée. Et si la quantité demandée est supérieure à celle en stock, La console affichera « La quantité demandée est supérieure à celle du livre ». Sinon, il faudra donc entrer la date de début d’emprunt et la date de fin de l’emprunt (Mais attention ! au format (JJ/MM/AAAA)).
+
+	Méthode RetournerLivre () : 
+Cette Méthode gère les opérations de retour de livre. Elle supprime l’emprunt de la liste et met) jour les quantités de livre disponible. 
+Elle affiche d’abord la liste des emprunteurs. Ensuite nous allons créer un objet de type emprunteur qui, avec la boucle for va parcourir la Liste_Emprunt. L’emprunteur saisit le nom du livre qu’il souhaite rendre. Si le nom du livre saisit correspond à un des livres dans La Liste_Emprunt, La console supprimera alors l’emprunt et mettra donc à jour la quantité de livre empruntée dans la Liste_Livres La console affichera enfin que l’emprunteur vient de rendre le livre emprunté en cas de succès de l’Opération, sinon elle affichera que l’opération est impossible en cas d’emprunt non existant dans la Liste_Emprunt.
+
+V.	Class GestionDate : 
+Cette classe nous permettra de gérer l’utilisation de la date d’emprunt d’un livre et de la date de retour de ce même livre. L’utilisation de la Méthode getDate () : Nous permettra de récupérer une date au format (JJ/MM/AAAA) à partir de l’entrée de l’utilisateur. 
+Gestion des exceptions : Le try catch utilisé, va nous permettre de gérer l’erreur selon laquelle si l’utilisateur ne rentre pas une date au format (JJ/MM/AAAA), le message d’erreur « Date invalide entrez une date au format (JJ/MM/AAAA) » s’affichera. 
+
+VI.	Class Auteur :  
+Cette classe à un constructeur qui initialise un auteur avec un nom, son livre et sa date de Naissance.
+
+VII.	Class Principal :  C’est la classe qui nous permettra d’utiliser notre application de Gestion de Bibliothèque. Les différentes instanciations nous permettront d’utiliser les différentes Méthodes des Méthodes citées ci-dessus.
+
+
+
+
+
+
